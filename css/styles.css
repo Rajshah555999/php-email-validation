@@ -1,0 +1,632 @@
+/* Main styling */
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #0d6efd 0%, #0046b8 100%);
+    box-shadow: 0 4px 20px rgba(13, 110, 253, 0.35);
+}
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 30px 30px;
+}
+
+.hero-image-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.hero-image-base {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.hero-image-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.floating-email {
+    position: absolute;
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    z-index: 3;
+    animation: floatAnimation 6s infinite ease-in-out;
+}
+
+.floating-email-1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.floating-email-2 {
+    top: 40%;
+    right: 5%;
+    animation-delay: 1s;
+}
+
+.floating-email-3 {
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.floating-circle-1, .floating-circle-2, .floating-circle-3 {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+    animation: pulseAnimation 8s infinite alternate ease-in-out;
+}
+
+.floating-circle-1 {
+    width: 180px;
+    height: 180px;
+    background-color: #ffffff;
+    top: 30%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.floating-circle-2 {
+    width: 120px;
+    height: 120px;
+    background-color: #ffffff;
+    top: 60%;
+    right: 25%;
+    animation-delay: 2s;
+}
+
+.floating-circle-3 {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    bottom: 10%;
+    right: 10%;
+    animation-delay: 4s;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.hover-card {
+    transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Validator section */
+.validation-tool-section {
+    background-color: #f1f5f9;
+    border-radius: 30px;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.validator-card {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 15px !important;
+}
+
+.large-input-group {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.validation-features .badge {
+    transition: all 0.3s ease;
+}
+
+.validation-features .badge:hover {
+    background-color: #e9ecef !important;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Benefits section styling */
+.benefits-section {
+    background-color: #f8f9fa;
+    border-radius: 30px;
+}
+
+.benefit-card {
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.rounded-4 {
+    border-radius: 1rem!important;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* Navbar styling */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.dropdown-item i {
+    margin-right: 8px;
+}
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+    border: none;
+    overflow: hidden;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+    padding: 1rem 1.25rem;
+    border-bottom: none;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Button styling */
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(13, 110, 253, 0.25);
+}
+
+/* Form elements */
+.form-control, .input-group-text {
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+}
+
+/* Email validation result styling */
+.result-card {
+    transition: all 0.3s ease;
+}
+
+.result-valid {
+    border-color: #28a745;
+}
+
+.result-invalid {
+    border-color: #dc3545;
+}
+
+.result-warning {
+    border-color: #ffc107;
+}
+
+/* Status indicator badges */
+.status-badge {
+    font-size: 1rem;
+    padding: 8px 20px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-badge i {
+    margin-right: 5px;
+}
+
+/* Animation for result appearance */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Progress bars */
+.progress {
+    border-radius: 50px;
+    height: 20px;
+    background-color: #e9ecef;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.progress-bar {
+    border-radius: 50px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* Form validation button */
+.btn-validate {
+    padding: 10px 25px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-validate:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Spinner for loading state */
+.spinner-border-sm {
+    margin-right: 8px;
+}
+
+/* MX Records table */
+.mx-records-table {
+    font-size: 0.9rem;
+}
+
+.mx-records-table th {
+    background-color: #f1f5f9;
+}
+
+/* Recent validations styling */
+.recent-validation {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.recent-validation:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+/* Tables */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th {
+    font-weight: 600;
+    border-bottom-width: 1px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Badges */
+.badge {
+    padding: 0.4em 0.6em;
+    font-weight: 500;
+}
+
+/* Footer styling */
+.footer-section {
+    margin-top: 80px;
+}
+
+.footer-top {
+    background: linear-gradient(135deg, #212529 0%, #1a1e21 100%);
+}
+
+.footer-heading {
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-heading:after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #0d6efd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.footer-links a {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-links a:hover {
+    color: #fff !important;
+    transform: translateX(5px);
+}
+
+.hover-white:hover {
+    color: #fff !important;
+}
+
+.contact-icon {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.social-icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.social-icon-circle:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.bg-dark-subtle {
+    background-color: #191c1f;
+}
+
+.footer-bottom a {
+    transition: all 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #0d6efd !important;
+}
+
+/* Auth pages specific styling */
+.auth-page {
+    min-height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+}
+
+.auth-card {
+    border-radius: 16px !important;
+    overflow: hidden;
+}
+
+.auth-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-overlay-content {
+    position: relative;
+    z-index: 10;
+}
+
+.auth-icon-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-decoration-circles .decoration-circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.auth-decoration-circles .circle-1 {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    right: -50px;
+}
+
+.auth-decoration-circles .circle-2 {
+    width: 150px;
+    height: 150px;
+    bottom: 50px;
+    left: -75px;
+}
+
+.auth-decoration-circles .circle-3 {
+    width: 100px;
+    height: 100px;
+    bottom: 10%;
+    right: 10%;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #0d6efd;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+    border-color: #0d6efd;
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-section .d-flex.gap-3 {
+        justify-content: center;
+    }
+    
+    .auth-page {
+        display: block;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2.display-5 {
+        font-size: 2rem;
+    }
+    
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    
+    .card-body {
+        padding: 1.25rem;
+    }
+    
+    .status-badge {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+    }
+    
+    .benefit-card {
+        padding: 1rem !important;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body.dark-mode {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+    
+    .dark-mode .card {
+        background-color: #1e1e1e;
+        border-color: #2d2d2d;
+    }
+    
+    .dark-mode .card-header {
+        background-color: #2d2d2d;
+        color: #fff;
+    }
+    
+    .dark-mode .text-muted {
+        color: #adb5bd !important;
+    }
+}
